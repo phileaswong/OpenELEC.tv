@@ -43,7 +43,7 @@
       #               athlon-fx amdfam10 barcelona
       # (Intel CPUs)  atom core2 nocona
       #
-      TARGET_CPU="core2"
+      TARGET_CPU="athlon64-sse3"
       ;;
 
     arm)
@@ -187,16 +187,16 @@
   OPTICAL_DRIVE_SUPPORT="yes"
 
 # build with AirPlay support (stream videos from iDevices to XBMC) (yes / no)
-  AIRPLAY_SUPPORT="yes"
+  AIRPLAY_SUPPORT="no"
 
 # build with AirTunes support (stream music from iDevices to XBMC) (yes / no)
-  AIRTUNES_SUPPORT="yes"
+  AIRTUNES_SUPPORT="no"
 
 # build with libnfs support (mounting nfs shares with XBMC) (yes / no)
-  NFS_SUPPORT="yes"
+  NFS_SUPPORT="no"
 
 # build with afpfs-ng support (mounting AFP shares with XBMC) (yes / no)
-  AFP_SUPPORT="yes"
+  AFP_SUPPORT="no"
 
 # build and install Samba Client support (yes / no)
   SAMBA_CLIENT="yes"
@@ -248,7 +248,7 @@
 # Xorg Graphic drivers to use (all / i915,i965,r200,r300,r600,fglrx,nvidia,nouveau,vmware)
 # Space separated list is supported,
 # e.g. GRAPHIC_DRIVERS="i915 i965 r300 r600 radeon nvidia nouveau"
-  GRAPHIC_DRIVERS="i915 i965"
+  GRAPHIC_DRIVERS="radeon"
 
 # OpenMAX implementation to use (no / bcm2835-driver)
   OPENMAX="no"
@@ -260,7 +260,7 @@
   VAAPI="yes"
 
 # Use XVBA video acceleration (needs AMD fglrx driver and a supported card)
-  XVBA="no"
+  XVBA="yes"
 
 # Use Broadcom CrystalHD Decoder Card for video acceleration 
 # (needs Kernelsupport for Broadcom Decoder Card and a supported card)
@@ -276,13 +276,13 @@
   IRSERVER_SUPPORT="yes"
 
 # build and install Joystick support (yes / no)
-  JOYSTICK_SUPPORT="yes"
+  JOYSTICK_SUPPORT="no"
 
 # build and install CEC adapter support (yes / no)
   CEC_SUPPORT="yes"
   
 # build and install iSCSI support - iscsistart (yes / no)
-  ISCSI_SUPPORT="yes"
+  ISCSI_SUPPORT="no"
 
 # LCD driver to Use - Possible drivers are ( Comma seperated:
 # bayrad,CFontz,CFontz633,CFontzPacket,curses,CwLnx,dm140,
